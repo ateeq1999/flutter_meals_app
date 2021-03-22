@@ -32,11 +32,11 @@ class MyApp extends StatelessWidget {
             ),
       ),
       home: CategoriesScreen(),
-      initialRoute: '/', // is default route
+      // initialRoute: '/', // is default route
       routes: {
         // '/': (ctx) => CategoriesScreen(),
+        MealDatilScreen.routeName: (ctx) => MealDatilScreen(),
         CategoryMealsScreen.routeName: (ctx) => CategoryMealsScreen(),
-        MealDatilsScreen.routeName: (ctx) => MealDatilsScreen(),
       },
     );
   }

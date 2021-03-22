@@ -1,9 +1,17 @@
 import 'package:flutter/material.dart';
 
-class MealDatilsScreen extends StatelessWidget {
-  static String routeName = '/meal-datils';
+class MealDatilScreen extends StatelessWidget {
+  static const String routeName = '/meal-datil';
   @override
   Widget build(BuildContext context) {
-    return Container();
+    final mealId = ModalRoute.of(context).settings.arguments as String;
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Meal Details'),
+      ),
+      body: Center(
+        child: Text('The meal - $mealId!'),
+      ),
+    );
   }
 }
